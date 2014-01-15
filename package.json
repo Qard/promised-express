@@ -1,0 +1,24 @@
+{
+  "name": "promised-express",
+  "version": "0.0.1",
+  "description": "Express middleware to resolve objects containing promises, passed into res.json, res.send or res.render, to their result",
+  "main": "index.js",
+  "dependencies": {
+    "resolve-promise-object": "0.x"
+  },
+  "devDependencies": {
+    "supertest": "~0.8.3",
+    "express": "~3.4.8",
+    "mocha": "~1.17.0",
+    "istanbul": "~0.2.3",
+    "jade": "~1.1.4"
+  },
+  "scripts": {
+    "test": "mocha -r should -G -R spec",
+    "generate-coverage": "rm -rf coverage && istanbul cover _mocha -- -r should -G -R spec",
+    "coverage-html": "npm run generate-coverage && open coverage/lcov-report/index.html",
+    "coverage": "npm run generate-coverage && istanbul report"
+  },
+  "author": "Stephen Belanger <admin@stephenbelanger.com>",
+  "license": "MIT"
+}
