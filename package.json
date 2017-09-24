@@ -4,16 +4,16 @@
   "description": "Express middleware to resolve objects containing promises, passed into res.json, res.send or res.render, to their result",
   "main": "index.js",
   "dependencies": {
-    "resolve-promise-object": "0.x"
+    "resolve-promise-object": "^1.0.0"
   },
   "devDependencies": {
-    "supertest": "~0.8.3",
-    "express": "~3.4.8",
-    "mocha": "~1.17.0",
-    "istanbul": "~0.2.3",
-    "jade": "~1.1.4",
-    "should": "~2.1.1",
-    "q": "~1.0.0"
+    "supertest": "~3.0.0",
+    "express": "~4.15.4",
+    "mocha": "~3.5.3",
+    "istanbul": "~0.4.5",
+    "jade": "~1.11.0",
+    "should": "~13.1.0",
+    "q": "~1.5.0"
   },
   "scripts": {
     "test": "mocha -r should -G -R spec",
