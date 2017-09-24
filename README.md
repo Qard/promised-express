@@ -1,4 +1,6 @@
 # promised-express
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Qard/promised-express.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/Qard/promised-express.png)](https://travis-ci.org/Qard/promised-express)
 
 Use [resolve-promise-object](https://github.com/Qard/resolve-promise-object) on any input to res.json(), res.render(), and res.send() to allow promises to be used in place of their response values. It does handy things like finding all promises in a deep tree structure and recursing into nested promises.
